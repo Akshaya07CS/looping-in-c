@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n, c = 0, r, original;
+    printf("Enter the number:");
+    scanf("%d", &n);
+
+    original = n;
+    while (n > 0) {
+        r = n % 10;
+        printf("%d", r);
+        c = c + 1;
+        n = n / 10;
+    }
+    printf("The number of digits of %d is %d\n", original, c);
+    printf("Finished");
+    return 0;
+}
