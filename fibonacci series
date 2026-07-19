@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int T1 = 0, T2 = 1, i, res, n;
+    printf("Enter the number:");
+    scanf("%d", &n);
+
+    printf("%d\t", T1);
+    printf("%d\t", T2);
+
+    for (i = 1; i <= n; i++) {
+        res = T1 + T2;
+        printf("%d\t", res);
+        T1 = T2;
+        T2 = res;
+    }
+    return 0;
+}
